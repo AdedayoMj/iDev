@@ -1,15 +1,17 @@
-export default interface IAccount {
+export default interface IUser {
     _id: string;
     uid: string;
     name: string;
     email: string;
+    picture?: string;
 }
 
-export const DEFAULT_USER: IAccount = {
+export const DEFAULT_USER: IUser = {
     _id: '',
     uid: '',
     name: '',
-    email: ''
+    email: '',
+    picture: ''
 };
 
 export const DEFAULT_FIRE_TOKEN = '';

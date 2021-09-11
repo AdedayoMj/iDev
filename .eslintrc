@@ -1,0 +1,26 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2021
+    },
+    "extends": ["plugin:react/recommended", "plugin:prettier/recommended", "plugin:@typescript-eslint/recommended", "plugin:react-hooks/recommended", "prettier"],
+    "plugins": ["prettier", "react"],
+    "rules": {
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "react/prop-types": "off",
+        "linebreak-style": "off",
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto"
+            },
+            { "usePrettierrc": true }
+        ]
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }
+}
